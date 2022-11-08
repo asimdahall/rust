@@ -1,11 +1,11 @@
 fn main() {
-    let x: u32 = 100;
-    println!("The value of X is {}", x);
-
-    // @info: this is called shadowing, you can user the same variable with the let keyword.
-    let x: i32 = -20;
-    println!("The value of X is {}", x);
-
-    let y: bool = false;
-    println!("The value of Y is {}", y);
+    let a = 5;
+    let b: u8 = 1;
+    let is_running: bool = true;
+    if is_running {
+        let c = a + b;
+        println!("it is running {}", c)
+    }
+    let char: char = '😅';
+    println!("{}", char)
 }
